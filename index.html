@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon Mary | Cristais </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <a href="#" class="logo">☾ Moon Mary</a>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#produtos">Cristais</a>
+    <a href="#sobre">Sobre nós</a>
+  </nav>
+  <button class="cart-button" onclick="toggleCart()">
+    🛍️ Carrinho <span id="cart-count">0</span>
+  </button>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <p>✧ SEU UNIVERSO DE ENCANTOS ✧</p>
+    <h1>Descubra a BELEZA<br>dos cristais</h1>
+    <p>Beleza, conexão e energia em cada detalhe.</p>
+    <a href="#produtos" class="main-button">Explorar coleção</a>
+  </div>
+</section>
+
+<section class="products-section" id="produtos">
+  <p class="subtitle">NOSSA COLEÇÃO</p>
+  <h2>Encontre seu cristal</h2>
+  <div class="products" id="products"></div>
+</section>
+
+<section class="about" id="sobre">
+  <h2>Um pouco de Moon Mary ☾</h2>
+  <p>
+    A Moon Mary nasceu para celebrar a beleza dos cristais,
+    a conexão com a natureza e os pequenos detalhes
+    que tornam cada momento especial.
+  </p>
+</section>
+
+<footer>
+  <h2>☾ Moon Mary</h2>
+  <p>Um universo de beleza e boas energias.</p>
+  <p>© 2026 Moon Mary. Todos os direitos reservados.</p>
+</footer>
+
+<!-- DETALHES DO PRODUTO -->
+<div class="modal" id="product-modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeProduct()">×</button>
+    <img id="detail-image" src="" alt="Cristal">
+    <h2 id="detail-name"></h2>
+    <p id="detail-description"></p>
+    <h3>✧ Dicas de cuidado</h3>
+    <ul id="detail-care"></ul>
+    <h2 id="detail-price"></h2>
+    <button class="main-button" id="detail-add">
+      Adicionar ao carrinho
+    </button>
+  </div>
+</div>
+
+<!-- CARRINHO -->
+<div class="cart-modal" id="cart-modal">
+  <div class="cart-content">
+    <button class="close" onclick="toggleCart()">×</button>
+    <h2>Seu carrinho 🛍️</h2>
+    <div id="cart-items"></div>
+    <h3>Total: <span id="cart-total">R$ 0,00</span></h3>
+    <button class="main-button" onclick="checkout()">
+      Finalizar pelo WhatsApp
+    </button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
