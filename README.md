@@ -29,6 +29,6 @@ Desenvolver um site para a Moon Mary, com o propósito de fortalecer sua presen�
 - Criar um site responsivo, adaptável a computadores, tablets e celulares.
 
 ## 4. Integrantes da Equipe
-Mariana Dias
-Leticya Felix      
+Mariana Dias, 
+Leticya Felix, 
 Brenda Cavalcanti
