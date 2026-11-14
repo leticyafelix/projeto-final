@@ -30,9 +30,5 @@ Desenvolver um site para a Moon Mary, com o prop√≥sito de fortalecer sua presen√
 
 ## 4. Integrantes da Equipe
 Mariana Dias
-Leticya Felix
+Leticya Felix      
 Brenda Cavalcanti
-
-- [Nome do integrante 1]
-- [Nome do integrante 2]
-- [Nome do integrante 3]
