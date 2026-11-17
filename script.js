@@ -46,6 +46,28 @@ const products = [
       "Não deixe de molho na água."
     ]
   },
+  {
+    id: 5,
+    name: "Labradorita",
+    price: 49.90,
+    image:"https://images.openai.com/static-rsc-4/MYhBYannC-gYGTgrpxIjLxawbKk-wjxRaPSU9YzWup213sUVaOzOgsQhfyiEDFUHwE8w8lLiWSpqucXAMz6-0tFpMnHrquwsSy2WJIfZSJ8R9cWmsxjnOByBdnGuRHEKeQcy2HBx6RcOarRhU3EsXK5zfkVjvU_q9KgrzaWGMhMX56v4uYK1E2hzvEbeWnCY?purpose=fullsize",
+    description: "A Labradorita é uma pedra encantadora, conhecida por seus reflexos azulados, violetas e dourados que brilham conforme a luz. Sua beleza misteriosa simboliza transformação, intuição e proteção. Um cristal especial para quem ama a magia e a conexão com o universo.",
+care: [
+  "evite quedas e impactos.",
+  "limpe com pano macio e seco."
+]
+  },
+  {
+    id: 6,
+    name: "Pedra da Lua",
+    price: 42.90,
+    image: "https://images.openai.com/static-rsc-4/rR-Ue0nJWDkZZECuj6HT_7cp4HOo8o3rgMK4eDUwdec5aXnafixYUZFzjV4OCmF93gehIs280vC-LbWSXCW4iWvEYEv8wDTO2B9VmPlkR0u2Agu_9LZvs38wGg0Rrh3JjTDmA9OUj3uhzNI2eJfXev59G-JiD8LPSz-5O3GZsvbL4dXNbiaWGDjOIP-P4JkF?purpose=fullsize",
+    description: "A Pedra da Lua é conhecida por seu brilho delicado e reflexos azulados que lembram a luz da lua. Tradicionalmente associada à feminilidade, intuição, novos ciclos e equilíbrio emocional, é um cristal perfeito para quem busca conexão com sua própria essência.",
+  care: [
+    "Evite quedas e Impactos",
+    "Limpe delicadamente com um pano macio e seco."
+  ]
+  }
   
 ];
 
