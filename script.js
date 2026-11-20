@@ -1,6 +1,6 @@
 
 const WHATSAPP = "5583986555108"; 
-
+// Catálogo de produtos e cristais da loja
 const products = [
   {
     id: 1,
