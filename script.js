@@ -1,74 +1,116 @@
-
 const WHATSAPP = "5583986555108"; 
-// Catálogo de produtos e cristais da loja
+
 const products = [
   {
     id: 1,
-    name: "Ametista",
-    price: 39.90,
-    image: "https://images.openai.com/static-rsc-4/QhWF4smR9qplBpW57ED0aDHa-uCCailuLRpd04jb792t2DK3vXfCq3wARpCt-9MXrGvbdYvgX0dzR9SDX1xhM-roLUbzpDuo4jquoUJABfQIyZUJg6NeOtcUXw4nE5543HS99KwArjkwjJCw9FCMFzST3nxOiXBtAQzAJjIU82y5kb1BTB9gZPSnvWG9Z-pV?purpose=fullsize",
-    description: "A ametista é um cristal violeta tradicionalmente associado à tranquilidade, espiritualidade e equilíbrio.",
+    name: " Drusa de Ametista",
+    price: 29.90,
+    image: "c:\\Users\\diasm\\Downloads\\Amethyst🐉.jpg",
+    description: "A pedra ametista é um dos cristais mais conhecidos e valorizados no campo espiritual, símbolo de sabedoria, paz e elevação da consciência.",
     care: [
+      "Também pode ser energizada com a luz da lua cheia ou selenita.",
       "Evite exposição prolongada ao sol forte.",
-      "Limpe com pano macio e seco."
     ]
   },
   {
     id: 2,
-    name: "Quartzo Rosa",
-    price: 34.90,
-    image: "https://images.openai.com/static-rsc-4/ToaBcji842QD76XPl-t6rXanmHHyGOe7jJ3wM7QKoMLUN8lmttIOFNClfpFQYD6HZv_c-nipHHSV1VwYDyz5yYyLSRPbf7mx-2WrwUHvjy5kRjYSN7yciqeVS2-PjVgbNh6mWd85lt9Pv4mVWzjg62FgZf1VTMHlA2WmdwHQStoT2mbVtZyWhbSXz8yye6yK?purpose=fullsize",
-    description: "O quartzo rosa é conhecido como o cristal do amor e simboliza carinho, afeto e autoestima.",
+    name: "Quartzo Rosa bruto",
+    price: 12.90,
+    image: "c:\\Users\\diasm\\Downloads\\crystals.jpg",
+    description: "O quartzo rosa é conhecido espiritalmente como a pedra do amor-próprio, a pedra vibra diretamente em sintonia com o Chakra Cardíaco (Anahata), ajudando a abrir espaço para sentimentos de afeto, compaixão e acolhimento trazendo suavidade para o campo energético.",
     care: [
-      "Evite quedas e impactos.",
-      "Limpe com pano macio e água, secando bem."
+      "Pode ser limpo com apenas água corrente ou água corrente e sal grosso com o intuito de limpeza energética.",
+      "energizado com a luz da lua cheia ou selenita."
     ]
   },
   {
     id: 3,
-    name: "Quartzo Cristal",
-    price: 29.90,
-    image: "https://images.openai.com/static-rsc-4/osGJHsdaM2EJ0H53cgI5RxYQzgU_SMXsexbCUP4IvwPJ5TUZIWNS5C4MIo1O7xfz4A2TBLkpCx-XWCGoD3aOE5FkwgYQAHZziVU5eZSjPRMk-oQwLYIJ6OwBWraWqVx0YsrCWZdHKVQenQ5JfxTzSG9V3sVpmWwMzwOkDAtEQwVLGdmIwhHwXfN3NR9aC3Fa?purpose=fullsize",
-    description: "Um cristal transparente muito apreciado por sua beleza e tradicional associação à clareza e harmonia.",
+    name: "Pedra ônix rolada",
+    price: 12.90,
+    image: "c:\\Users\\diasm\\Downloads\\download (3).jpg",
+    description: " É considerada uma das principais pedras de defesa contra energias densas, inveja, ataques espirituais e vibrações negativas do ambiente. Conecta-se diretamente ao primeiro chakra (Muladhara), ajudando a manter os pés no chão, trazendo estabilidade, segurança e foco em momentos de grande confusão mental ou estresse.",   
     care: [
-      "Guarde separado de pedras que possam riscar.",
-      "Limpe delicadamente com água e seque."
+      "Por absorver muita carga pesada, recomenda-se limpá-la periodicamente em água corrente com sal grosso, ou sobre uma drusa de cristal / selenita, e recarregá-la preferencialmente em contato com a terra.",
+      "Evite exposição ao sol intenso."
     ]
   },
   {
     id: 4,
-    name: "Fluorita",
-    price:  45.90,
-    image: "https://images.openai.com/static-rsc-4/8xf5F9AJVaiqdmp8Ja3zs0w471ole301DVuiCtwluoiwmDVx0hwayEFCkFy-DI-Z8AalSXXLKMuvRrc3b_XpJZDE4pk98v20ANTzHkYeoK1VOVTLTjaOnYS7inf8hYkmHEH-SUQHKzbLULyaisbLuKUaZxxzre3G27D9hL-GupiRUF3Ma4aKoXgubmOK7AAi?purpose=fullsize",
-    description: "A fluorita apresenta cores encantadoras e é tradicionalmente associada ao foco e à organização.",
+    name: "Selenita",
+    price:  16.90,
+    image: "c:\\Users\\diasm\\Downloads\\download (4).jpg",
+    description: "É um dos cristais mais poderosos para limpar energias negativas de pessoas, ambientes e até de outros cristais (bastando apoiar outras pedras sobre uma placa de selenita).",
     care: [
-      "Evite contato com produtos químicos.",
-      "Não deixe de molho na água."
+      " Diferente de muitos minerais, a selenita não precisa ser limpa ou recarregada energeticamente, pois ela própria dissolve as energias densas que absorve.",
     ]
   },
   {
     id: 5,
-    name: "Labradorita",
-    price: 49.90,
-    image:"https://images.openai.com/static-rsc-4/MYhBYannC-gYGTgrpxIjLxawbKk-wjxRaPSU9YzWup213sUVaOzOgsQhfyiEDFUHwE8w8lLiWSpqucXAMz6-0tFpMnHrquwsSy2WJIfZSJ8R9cWmsxjnOByBdnGuRHEKeQcy2HBx6RcOarRhU3EsXK5zfkVjvU_q9KgrzaWGMhMX56v4uYK1E2hzvEbeWnCY?purpose=fullsize",
-    description: "A Labradorita é uma pedra encantadora, conhecida por seus reflexos azulados, violetas e dourados que brilham conforme a luz. Sua beleza misteriosa simboliza transformação, intuição e proteção. Um cristal especial para quem ama a magia e a conexão com o universo.",
+    name: "Quartzo Azul bruto",
+    price: 12.90,
+    image: "c:\\Users\\diasm\\Downloads\\download (5).jpg",
+    description: "O quartzo azul é uma pedra de comunicação, expressão e criatividade. Ele ajuda a acalmar a mente, promovendo clareza mental e facilitando a expressão de pensamentos e sentimentos.",
 care: [
-  "evite quedas e impactos.",
-  "limpe com pano macio e seco."
+  "Pode ser limpo com apenas água corrente ou água corrente e sal grosso com o intuito de limpeza energética.",
+      "energizado com a luz da lua cheia ou selenita.",
+  
 ]
   },
   {
     id: 6,
-    name: "Pedra da Lua",
-    price: 42.90,
-    image: "https://images.openai.com/static-rsc-4/rR-Ue0nJWDkZZECuj6HT_7cp4HOo8o3rgMK4eDUwdec5aXnafixYUZFzjV4OCmF93gehIs280vC-LbWSXCW4iWvEYEv8wDTO2B9VmPlkR0u2Agu_9LZvs38wGg0Rrh3JjTDmA9OUj3uhzNI2eJfXev59G-JiD8LPSz-5O3GZsvbL4dXNbiaWGDjOIP-P4JkF?purpose=fullsize",
-    description: "A Pedra da Lua é conhecida por seu brilho delicado e reflexos azulados que lembram a luz da lua. Tradicionalmente associada à feminilidade, intuição, novos ciclos e equilíbrio emocional, é um cristal perfeito para quem busca conexão com sua própria essência.",
+    name: " Pirita bruta",
+    price: 29.90,
+    image:"c:\\Users\\diasm\\Downloads\\Pyrite.jpg",
+    description: "A pirita é amplamente conhecida na espiritualidade e no misticismo como a pedra da prosperidade, da abundância e da força pessoal. Devido ao seu brilho metálico e tom dourado (que lhe rendeu historicamente o apelido de (ouro dos tolos), sua energia está fortemente ligada ao elemento fogo e ao chakra do plexo solar.",
   care: [
-    "Evite quedas e Impactos",
-    "Limpe delicadamente com um pano macio e seco."
+    " Por conter ferro em sua composição, evite o uso de água, sal ou umidade, pois isso pode oxidar e danificar a pedra. Prefira a limpeza a seco com um pincel ou pano macio, ou energize sob a luz da Lua por cerca de 6 horas ou do Sol por até 3 horas."
   ]
+  },
+  {
+    id: 7,
+    name: "Olho de Tigre rolado",
+    price: 12.90,
+    image: "c:\\Users\\diasm\\Downloads\\download (6).jpg",
+    description: " Atua como uma barreira que repele energias negativas, inveja e mau-olhado, devolvendo a vibração pesada para a terra. Estimula a autoconfiança, a determinação e a capacidade de enfrentar momentos de mudança, medo ou grandes desafios.",
+    care: [
+      "Pode ser limpo com água corrente e sal grosso, ou sobre uma drusa de cristal / selenita, e recarregado preferencialmente em contato com a terra.",
+      "Também pode ser energizada com a luz solar (cerca de 4 horas) ou da lua cheia (cerca de 6 horas)."
+    ]
+  },
+  {   id: 8,
+    name: "Quartzo verde rolado",
+    price: 12.90,
+    image: "c:\\Users\\diasm\\Downloads\\download (7).jpg", 
+    description: "O Quartzo verde é uma pedra de cura poderosa, conhecida por sua capacidade de promover o equilíbrio emocional e a regeneração. É amplamente utilizada para fortalecer a conexão com a natureza e a vitalidade.",
+    care: [
+      "Pode ser limpo com apenas água corrente ou água corrente e sal grosso com o intuito de limpeza energética.",
+      "energizado com a luz da lua cheia, solar ou selenita.",
+      
+    ]
+  },
+  {
+    id: 9,
+    name: "Cianita Azul bruta",
+    price: 12.90,
+    image: "c:\\Users\\diasm\\Downloads\\What Are Chakras_ (1).jpg",
+    description: "A cianita azul é uma pedra de comunicação e expressão, conhecida por sua capacidade de facilitar a clareza mental e a conexão espiritual. Ela ajuda a equilibrar as energias do corpo e da mente, promovendo a harmonia interior.", 
+    care: [
+      "A cianita azul não acumula energias negativas e dispensa limpezas frequentes. Quando quiser limpar, você pode usar defumação (incenso ou sálvia) ou deixá-la sobre uma placa de selenita.",
+      "Evitar exposição prolongada ao sol e à água"  
+    ]
+  },
+  {
+    id: 10,
+    name: "Jaspe Vermelho rolado",
+    price: 12.90,
+    image: "c:\\Users\\diasm\\Downloads\\download (9).jpg",
+    description: "O Jaspe Vermelho é uma pedra de cura poderosa, conhecida por sua capacidade de promover o equilíbrio emocional e a regeneração. É amplamente utilizada para fortalecer a conexão com a natureza e a vitalidade feminina.",
+    care: [
+      "Pode ser limpo com apenas água corrente ou água corrente e sal grosso com o intuito de limpeza energética.",
+      "energizado com a luz da lua cheia, solar ou selenita.",
+      
+    ]
   }
-  
 ];
 
 let cart = [];
@@ -90,7 +132,7 @@ function renderProducts() {
         onclick="openProduct(${product.id})"
       >
       <h3>${product.name}</h3>
-      <p>Descubra a beleza deste cristal.</p>
+      <p>Unidade</p>
       <div class="price">${money(product.price)}</div>
       <button onclick="openProduct(${product.id})">
         Conhecer cristal
@@ -170,7 +212,7 @@ function updateCart() {
           </button>
         </div>
       `).join("")
-      : "<p>Seu carrinho está vazio. 💜</p>";
+      : "<p>Seu carrinho está vazio. </p>";
 }
 
 function toggleCart() {
@@ -201,7 +243,7 @@ function checkout() {
   );
 
   const message =
-    `Olá! 💜 Vim pela loja Moon Mary e gostaria de fazer um pedido:\n\n` +
+    `Olá! Gostaria de fazer um pedido.:\n\n` +
     `${items}\n\nTotal: ${money(total)}\n\n` +
     `Gostaria de confirmar meu pedido!`;
 

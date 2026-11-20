@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +7,11 @@
 html {
   scroll-behavior: smooth;
 }
-/* Estilização geral da loja Moon Mary */
+
 body {
   font-family: 'Poppins', sans-serif;
-  background: #fcf9ff;
-  color: #51405e;
+  background: #D8A6AE;
+  color: lightyellow;
 }
 
 header {
@@ -20,16 +19,26 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 7%;
-  background: #f0e5fa;
+  background: lightyellow;
   flex-wrap: wrap;
   gap: 15px;
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-size: 36px;
   color: #805b9d;
   text-decoration: none;
+}
+
+.logo-moon {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 2px 4px #c79a2d55);
 }
 
 nav {
@@ -60,24 +69,86 @@ button {
   border-radius: 30px;
 }
 
+/* BANNER PRINCIPAL — MOON MARY */
+
 .hero {
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 20px;
-  background:
-    linear-gradient(#e8d9f0aa, #e8d9f0aa),
-    url('https://images.openai.com/static-rsc-4/qwWWQ5qu-OEX0lrpAbEw1fpGsFXNbrZ9p_D9aSkjkNtL7ZPN6QvYCtr3f6g21lgfNroxfPDRkzpeasn20IcyewnxXu1Fq2nM2odzNDOqROCJGMRaTZv5MKZJOv1lGBU5rUGEioGyVAg7dNr10cKSfzgTnB8Ja8UZhWRpvo1xJqlflQ4dL57Xm0X2BYG9b43K?purpose=fullsize')
-    center/cover;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 24px;
+    box-sizing: border-box;
 }
 
 .hero-content {
-  background: #ffffffc9;
-  padding: 45px;
-  border-radius: 20px;
-  max-width: 650px;
+    background: transparent;
+    padding: 35px 20px;
+    border-radius: 0;
+    max-width: 760px;
+    width: 100%;
+}
+
+.hero-kicker {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: lightyellow;
+    margin-bottom: 28px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 76px);
+    font-weight: 500;
+    line-height: 1.12;
+    color:lightyellow;
+    margin-bottom: 24px;
+}
+
+.hero-content h1 span {
+    display: block;
+    font-style: italic;
+}
+
+.hero-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: lightyellow;
+    max-width: 470px;
+    margin: 0 auto 32px;
+}
+
+.main-button {
+    display: inline-block;
+    background: transparent;
+    color: #49343F;
+    border: 1px solid #654454;
+    border-radius: 0;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.main-button:hover {
+    background: #654454;
+    color: #F2E9DC;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 520px;
+        padding: 45px 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+    }
 }
 
 .hero-content h1 {
@@ -94,7 +165,7 @@ button {
 .main-button {
   display: inline-block;
   background: #8968a8;
-  color: white;
+  color: lightyellow;
   border: none;
   padding: 14px 25px;
   border-radius: 30px;
@@ -114,7 +185,7 @@ button {
 }
 
 .subtitle {
-  color: #a17bbb;
+  color: lightyellow;
   letter-spacing: 3px;
   font-size: 12px;
 }
@@ -134,7 +205,7 @@ button {
 }
 
 .product-card {
-  background: white;
+  background: lightyellow;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 5px 22px #a98bb51c;
@@ -172,7 +243,7 @@ button {
 }
 
 .product-card button {
-  background: #e9dcf3;
+  background: #fbd4da;
   border: none;
   color: #76518e;
   border-radius: 25px;
@@ -182,11 +253,11 @@ button {
 
 .product-card button:hover {
   background: #8968a8;
-  color: white;
+  color: lightyellow;
 }
 
 .about {
-  background: #f0e5f7;
+  background: #ecc4cb;
   padding: 65px 20px;
   text-align: center;
 }
@@ -199,8 +270,8 @@ button {
 
 footer {
   text-align: center;
-  background: #79598f;
-  color: white;
+  background: lightyellow;
+  color: #805b9d;
   padding: 35px 20px;
   line-height: 2;
 }
@@ -220,7 +291,7 @@ footer {
 .modal-content,
 .cart-content {
   position: relative;
-  background: #fffaff;
+  background: #D8A6AE;
   padding: 30px;
   border-radius: 20px;
   width: 100%;
@@ -259,13 +330,29 @@ footer {
   color: #805b9d;
 }
 
+.product-specs {
+  margin: 18px 0;
+  padding: 16px 18px;
+  background:#b5a1c4 ;
+  border-left: 3px solid #D8A6AE;
+  border-radius: 12px;
+}
+
+.product-specs h3 {
+  margin-top: 0;
+}
+
+.product-specs ul {
+  margin-top: 10px;
+}
+
 .close {
   position: absolute;
   right: 15px;
   top: 10px;
   border: none;
   background: transparent;
-  color: #805b9d;
+  color: lightyellow;
   font-size: 30px;
   z-index: 2;
 }
@@ -280,7 +367,7 @@ footer {
 
 .cart-item button {
   border: none;
-  background: #f0e5fa;
+  background: #D8A6AE;
   color: #805b9d;
   padding: 5px 10px;
   border-radius: 10px;
@@ -289,6 +376,15 @@ footer {
 @media(max-width: 650px) {
   header {
     justify-content: center;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .logo-moon {
+    width: 48px;
+    height: 48px;
   }
 
   nav {
@@ -304,4 +400,95 @@ footer {
   .products-section h2 {
     font-size: 30px;
   }
+}
+
+/* Página de Login */
+
+.register-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.login-box {
+    background: lightyellow;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 22px #a98bb51c;
+}
+
+.login-box h1 {
+    font-family: 'Playfair Display', serif;
+    color: #805b9d;
+    font-size: 35px;
+    margin: 20px 0 10px;
+}
+
+.login-box p {
+    color: #604c70;
+    font-size: 14px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.login-box label {
+    color: #604c70;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.login-box input {
+    padding: 13px;
+    border: 1px solid #e4d8ed;
+    border-radius: 10px;
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #8968a8;
+}
+
+.login-box button {
+    background: #8968a8;
+    color: lightyellow;
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: inherit;
+    margin-top: 10px;
+}
+
+.login-box button:hover {
+    background: #805b9d;
+}
+
+.login-box .register-login {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.login-box a {
+    color: #8968a8;
+    font-weight: 600;
+}
+about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    text-align: center;
+    line-height: 1.8;
+    box-sizing: border-box;
 }
