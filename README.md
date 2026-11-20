@@ -6,7 +6,7 @@ Desenvolvimento de um site para a Moon Mary, uma loja especializada na comercial
 
 ## 2. Descrição do Projeto
 
-A Moon Mary é uma loja de cristais e produtos esotéricos que tem como proposta oferecer produtos relacionados à espiritualidade, à natureza e ao bem-estar. Seu catálogo inclui cristais, pedras naturais, incensos, acessórios e outros artigos esotéricos.
+A Moon Mary é uma loja de cristais e produtos esotéricos que tem como proposta oferecer produtos relacionados à espiritualidade, à natureza e ao bem-estar. Seu catálogo inclui cristais e pedras naturais como início do projeto.
 
 O projeto consiste no desenvolvimento de um site para a loja, com o objetivo de apresentar a marca, divulgar seus produtos e proporcionar aos clientes uma experiência de navegação simples, organizada e intuitiva.
 
